@@ -43,3 +43,27 @@ function setupContact(){
   });
 }
 document.addEventListener("DOMContentLoaded",()=>{renderFeatured();renderEvents();renderShowcase();setupContact();});
+
+// Mobile navigation
+(function(){
+  const toggle=document.querySelector('.menu-toggle');
+  const nav=document.querySelector('#site-navigation');
+  if(!toggle || !nav) return;
+  toggle.addEventListener('click',()=>{
+    const open=nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded',String(open));
+    toggle.setAttribute('aria-label',open?'Close navigation':'Open navigation');
+  });
+  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+    nav.classList.remove('open');
+    toggle.setAttribute('aria-expanded','false');
+    toggle.setAttribute('aria-label','Open navigation');
+  }));
+  window.addEventListener('resize',()=>{
+    if(window.innerWidth>850){
+      nav.classList.remove('open');
+      toggle.setAttribute('aria-expanded','false');
+      toggle.setAttribute('aria-label','Open navigation');
+    }
+  });
+})();
