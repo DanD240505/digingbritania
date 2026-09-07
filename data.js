@@ -28,10 +28,10 @@ const DIGGING_BRITANNIA = {
 
   pastDigs: [
     {
-      title: "Example Past Dig",
-      date: "Add date",
-      location: "Add location",
-      description: "Add a short description of the site, conditions and highlights.",
+      title: "Trelawynd Pastures",
+      date: "6th September 2026",
+      location: "Trelawynd",
+      description: "Some absolutely amazing finds up on this one, inclding a gold hammered coin!.",
       images: [
         "assets/drone-dig-1.png",
         "assets/drone-dig-2.png",
