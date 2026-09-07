@@ -33,9 +33,9 @@ const DIGGING_BRITANNIA = {
       location: "Trelawynd",
       description: "Some absolutely amazing finds up on this one, inclding a gold hammered coin!.",
       images: [
-        "assets/drone-dig-1.png",
-        "assets/drone-dig-2.png",
-        "assets/drone-dig-3.png",
+        "assets/trelawynd1.jpg",
+        "assets/trelawynd2.jpg",
+        "assets/trelawynd3.jpg",
         "assets/find-of-the-dig.png"
       ]
     }
