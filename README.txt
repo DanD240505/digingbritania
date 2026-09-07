@@ -24,3 +24,10 @@ EVENTS PAGE UPDATE
 The Events page now treats Facebook as the single live source for all upcoming Digging Britannia digs.
 It explains the group's NCMD insurance requirement and the use of what3words + Google Maps for meeting locations.
 It includes direct Android and iPhone what3words download links.
+
+V7 updates:
+- Added editable Top Finds section to showcase.html using topFinds in data.js.
+- Added five supplied Top Find photographs under assets/top-find-1.png through top-find-5.png.
+- Added subtle page-load and scroll-reveal animations with reduced-motion support.
+- Added polished Showcase hero and Did You Know section.
+- Top Find names/descriptions/found-by fields are easy to edit in data.js.

@@ -19,14 +19,27 @@ function renderEvents(){
       <div><h3>${e.title}</h3><p><strong>${e.location}</strong></p><p>${e.description}</p></div>
     </article>`).join("");
 }
+function renderTopFinds(){
+  const wrap = document.querySelector("#top-finds-list");
+  if(!wrap || !DIGGING_BRITANNIA.topFinds) return;
+  wrap.innerHTML = DIGGING_BRITANNIA.topFinds.map(f => `
+    <article class="top-find-card reveal">
+      <div class="top-find-image-wrap"><img src="${f.image}" alt="${f.title}"></div>
+      <div class="top-find-content">
+        <h3>${f.title}</h3>
+        <p>${f.description}</p>
+        <div class="found-by"><span class="found-icon">●</span><span>Found by: <strong>${f.foundBy}</strong></span></div>
+      </div>
+    </article>`).join("");
+}
 function renderShowcase(){
   const wrap = document.querySelector("#showcase-list");
   if(!wrap) return;
   wrap.innerHTML = DIGGING_BRITANNIA.pastDigs.map(d => `
-    <article class="card">
+    <article class="card reveal">
       <span class="tag">${d.date}</span><span class="tag">${d.location}</span>
       <h3>${d.title}</h3><p>${d.description}</p>
-      <div class="gallery">${d.images.map(src => `<img src="${src}" alt="${d.title} find">`).join("")}</div>
+      <div class="gallery">${d.images.map(src => `<img src="${src}" alt="${d.title} find" loading="lazy">`).join("")}</div>
     </article>`).join("");
 }
 function setupContact(){
@@ -42,7 +55,16 @@ function setupContact(){
     window.location.href=`mailto:${DIGGING_BRITANNIA.contactEmail}?subject=${subject}&body=${body}`;
   });
 }
-document.addEventListener("DOMContentLoaded",()=>{renderFeatured();renderEvents();renderShowcase();setupContact();});
+document.addEventListener("DOMContentLoaded",()=>{
+  renderFeatured();renderEvents();renderTopFinds();renderShowcase();setupContact();
+  document.body.classList.add("page-ready");
+  const revealItems=document.querySelectorAll("main section:not(.showcase-hero) .section-head, main section:not(.showcase-hero) .card");
+  revealItems.forEach(el=>el.classList.add("reveal"));
+  const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{
+    if(entry.isIntersecting){entry.target.classList.add("visible");observer.unobserve(entry.target);}
+  }),{threshold:.08});
+  document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+});
 
 // Mobile navigation
 (function(){
