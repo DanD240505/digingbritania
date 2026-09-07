@@ -3,17 +3,17 @@ const DIGGING_BRITANNIA = {
   facebookGroup: "https://www.facebook.com/groups/933958159268600",
 
   featuredFind: {
-    title: "Elizabeth I Hammered Coin",
+    title: "Edward 3rd Quater Noble",
     subtitle: "Find of the Dig",
     description:
-      "A fantastic Elizabeth I hammered coin recovered on one of the group's digs. Replace this image and the details after each event to keep the homepage fresh.",
+      "A fantastic Edward 3rd Quater Noble recovered on one of the group's digs.",
     image: "assets/find-of-the-dig.png",
     details: [
-      ["Period", "Tudor / Elizabeth I"],
-      ["Type", "Hammered coin"],
+      ["Period", "Treaty Period / Edward III"],
+      ["Type", "Gold Hammered coin"],
       ["Condition", "As found / awaiting full recording"],
-      ["Found by", "Add detectorist name"],
-      ["Dig", "Add dig name and date"]
+      ["Found by", "Ash"],
+      ["Dig", "Trelawynd Pastures"]
     ]
   },
 
