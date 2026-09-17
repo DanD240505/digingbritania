@@ -3,50 +3,49 @@ const DIGGING_BRITANNIA = {
   facebookGroup: "https://www.facebook.com/groups/933958159268600",
 
   featuredFind: {
-    title: "Edward 3rd Quater Noble",
+    title: "Elizabeth I Hammered Coin",
     subtitle: "Find of the Dig",
     description:
-      "A fantastic Edward 3rd Quater Noble recovered on one of the group's digs.",
+      "A fantastic Elizabeth I hammered coin recovered on one of the group's digs. Replace this image and the details after each event to keep the homepage fresh.",
     image: "assets/find-of-the-dig.png",
     details: [
-      ["Period", "Treaty Period / Edward III"],
-      ["Type", "Gold Hammered coin"],
+      ["Period", "Tudor / Elizabeth I"],
+      ["Type", "Hammered coin"],
       ["Condition", "As found / awaiting full recording"],
-      ["Found by", "Ash"],
-      ["Dig", "Trelawynd Pastures"]
+      ["Found by", "Add detectorist name"],
+      ["Dig", "Add dig name and date"]
     ]
   },
 
-
   topFinds: [
     {
-      title: "Bronze Age Axe Head",
+      title: "Unknown Iron Object",
       image: "assets/top-find-1.png",
-      foundBy: "Nat Nelly",
-      description: "An amazing example of a Bronze Age Axe Head."
+      foundBy: "Add detectorist name",
+      description: "A substantial iron object with an unusual shape and a story still to be uncovered."
     },
     {
-      title: "Edward III Quater Noble",
+      title: "Medieval Coin",
       image: "assets/top-find-2.png",
-      foundBy: "Ash",
-      description: "A stunning Edward III Quater Noble!"
+      foundBy: "Add detectorist name",
+      description: "A striking coin photographed in the soil shortly after being recovered."
     },
     {
-      title: "Elizabeth 1st Hammered Coin",
+      title: "Historic Silver Coin",
       image: "assets/top-find-3.png",
-      foundBy: "Colin Deegan",
-      description: "A beautifully detailed hammered coin with excellent surviving detail."
+      foundBy: "Add detectorist name",
+      description: "A beautifully detailed historic coin with excellent surviving detail."
     },
     {
-      title: "Saxon/Norce Pendant",
+      title: "Possible Pendant",
       image: "assets/top-find-4.png",
-      foundBy: "Dafydd Myrddin",
-      description: "Still to be confirmed, a potential Saxon or Norce Pendant with amazing featured."
+      foundBy: "Add detectorist name",
+      description: "An intriguing small object with a loop and decorative form."
     },
     {
-      title: "Iron Age/Roman Bucket Mount",
+      title: "Bronze Artefact",
       image: "assets/top-find-5.png",
-      foundBy: "Unknown",
+      foundBy: "Add detectorist name",
       description: "A distinctive bronze find with a wonderfully preserved shape and patina."
     }
   ],
@@ -62,16 +61,15 @@ const DIGGING_BRITANNIA = {
 
   pastDigs: [
     {
-      title: "Trelawynd Pastures",
-      date: "6th September 2026",
-      location: "Trelawynd",
-      description: "Some absolutely amazing finds up on this one, inclding a gold hammered coin!",
+      title: "Example Past Dig",
+      date: "Add date",
+      location: "Add location",
+      description: "Add a short description of the site, conditions and highlights.",
       images: [
-        "assets/trelawynd1.jpg",
-        "assets/trelawynd2.jpg",
-        "assets/trelawynd3.jpg",
+        "assets/drone-dig-1.png",
+        "assets/drone-dig-2.png",
+        "assets/drone-dig-3.png",
         "assets/find-of-the-dig.png"
-
       ]
     }
   ]

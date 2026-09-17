@@ -64,3 +64,14 @@ body.page-ready{opacity:1;transform:none}
 @media(max-width:700px){.top-finds-grid{grid-template-columns:1fr 1fr}.top-find-card:last-child{grid-column:auto}.did-you-know-inner{grid-template-columns:1fr}.history-mark{grid-column:auto;text-align:left}.showcase-hero{min-height:300px;padding:65px 0 42px}}
 @media(max-width:520px){.top-finds-grid{grid-template-columns:1fr}.top-find-image-wrap{aspect-ratio:1.15}.top-find-content{padding:16px}.did-you-know{padding:52px 0}.history-mark{font-size:1.15rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}body{opacity:1;transform:none;transition:none}.reveal{opacity:1;transform:none;transition:none}.top-find-card,.top-find-image-wrap img{transition:none}}
+
+/* Never Miss a Dig signup */
+.signup-section{padding-top:20px}.signup-card{display:grid;grid-template-columns:.9fr 1.1fr;gap:38px;align-items:center;background:linear-gradient(135deg,rgba(184,136,66,.12),rgba(255,255,255,.025));border:1px solid var(--line);border-radius:18px;padding:32px}.signup-copy h2{margin-bottom:10px}.signup-copy p{color:var(--muted);max-width:560px}.signup-note{font-size:.82rem}.signup-form{gap:16px}.signup-fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}.signup-fields>div:first-child{grid-column:1 / -1}.signup-fields label{display:block;margin-bottom:6px}.signup-fields label span{color:var(--muted);font-weight:400;font-size:.82rem}.signup-options{display:grid;gap:10px;padding:14px 0 2px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.check{display:flex;align-items:flex-start;gap:10px;color:var(--muted);font-size:.88rem;font-weight:500}.check input{width:auto;margin-top:4px;accent-color:var(--gold)}.signup-form .btn{justify-self:start;border:1px solid var(--bronze);cursor:pointer}.form-disclaimer{margin:0;color:var(--muted);font-size:.72rem;line-height:1.5}.signup-form input:focus{outline:2px solid rgba(223,189,120,.22);outline-offset:1px}
+@media(max-width:850px){.signup-card{grid-template-columns:1fr;gap:25px;padding:26px}.signup-section{padding-top:10px}}
+@media(max-width:520px){.signup-fields{grid-template-columns:1fr}.signup-fields>div:first-child{grid-column:auto}.signup-card{padding:21px}.signup-form .btn{width:100%}}
+@media(prefers-reduced-motion:reduce){.signup-form input:focus{outline:none}}
+
+/* Brevo embedded signup form */
+.brevo-form-wrap{width:100%;min-width:0;display:flex;justify-content:center;align-items:center;background:rgba(255,255,255,.025);border:1px solid var(--line);border-radius:14px;padding:12px;overflow:hidden}
+.brevo-form-wrap iframe{display:block;width:100%;max-width:540px;height:305px;border:0;border-radius:8px;background:#fff}
+@media(max-width:520px){.brevo-form-wrap{padding:6px}.brevo-form-wrap iframe{height:315px}}

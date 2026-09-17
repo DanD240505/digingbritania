@@ -42,6 +42,14 @@ function renderShowcase(){
       <div class="gallery">${d.images.map(src => `<img src="${src}" alt="${d.title} find" loading="lazy">`).join("")}</div>
     </article>`).join("");
 }
+function setupSignup(){
+  const form=document.querySelector("#signup-form");
+  if(!form) return;
+  form.addEventListener("submit", e=>{
+    e.preventDefault();
+    alert("The signup form is ready, but it still needs to be connected to the Digging Britannia subscriber service (such as Brevo) before it can collect details.");
+  });
+}
 function setupContact(){
   const form=document.querySelector("#contact-form");
   if(!form) return;
@@ -56,7 +64,7 @@ function setupContact(){
   });
 }
 document.addEventListener("DOMContentLoaded",()=>{
-  renderFeatured();renderEvents();renderTopFinds();renderShowcase();setupContact();
+  renderFeatured();renderEvents();renderTopFinds();renderShowcase();setupContact();setupSignup();
   document.body.classList.add("page-ready");
   const revealItems=document.querySelectorAll("main section:not(.showcase-hero) .section-head, main section:not(.showcase-hero) .card");
   revealItems.forEach(el=>el.classList.add("reveal"));
